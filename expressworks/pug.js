@@ -5,7 +5,7 @@ const path = require('path');
 const port = process.argv[2];
 const file = process.argv[3];
 
-app = express();
+let app = express();
 app.set('view engine', 'pug');
 app.set('views', file);
 
